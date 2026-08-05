@@ -51,8 +51,7 @@ if [ -f "/var/run/stubby_proxy.pid" ]; then
 		while [ `date +%s` -lt 1593374000 ] ; do
 		sleep 10
 		done
-		/usr/sbin/stubby -g $1 $2 $3 $4 $5 $6 $7 $8 $9
-###		/usr/sbin/stubby -g -l /tmp/stubby.log
+		/usr/sbin/stubby -g $(nvram get stubby_opt) >>"/tmp/stubby.log" 2>&1
 		touch /var/run/stubby_proxy.pid
 		logger -t stubby "Running."
 		sync && echo 3 > /proc/sys/vm/drop_caches
