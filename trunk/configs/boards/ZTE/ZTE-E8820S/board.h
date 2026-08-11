@@ -1,8 +1,8 @@
-/* ZTE_E8820S */
+/* ZTE-E8820S */
 
-#define BOARD_PID		"ZTE_E8820S"
-#define BOARD_NAME		"ZTE_E8820S"
-#define BOARD_DESC		"ZTE_E8820S Wireless Router"
+#define BOARD_PID		"ZTE-E8820S"
+#define BOARD_NAME		"ZTE-E8820S"
+#define BOARD_DESC		"ZTE-E8820S Wireless Router"
 #define BOARD_VENDOR_NAME	"ZTE Technology"
 #define BOARD_VENDOR_URL	"http://www.ztehome.com.cn/"
 #define BOARD_MODEL_URL		"http://www.ztehome.com.cn/"
